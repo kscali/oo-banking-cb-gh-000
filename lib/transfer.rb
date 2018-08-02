@@ -21,7 +21,7 @@ class Transfer
     if !valid? 
       "Transaction rejected. Please check your account balance."
     else 
-      receiver.balance = sender.amount
+      receiver.balance += sender.amount
     end 
   end 
   
