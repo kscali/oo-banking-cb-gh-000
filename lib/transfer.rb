@@ -15,8 +15,6 @@ class Transfer
     else 
       false 
     end  
-    sender.status
-    receiver.status
   end   
   
   def execute_transaction
