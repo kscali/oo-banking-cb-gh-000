@@ -6,9 +6,8 @@ class BankAccount
   
   def initialize(name)
     @name = name 
-    @balance = balance
-    @status = status 
-    @@account << balance 
+    @balance = 1000
+    @status = "open"
   end  
   
   def self.all 
