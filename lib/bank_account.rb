@@ -10,16 +10,8 @@ class BankAccount
   end  
   
   
-  def balance 
-    @balance = 1000
-  end 
-  
-  def status 
-    @status = "open"
-  end 
-  
   def deposit(money)
-    @@account << money
+    self.balance += money
   end   
 
 end
