@@ -10,7 +10,7 @@ class Transfer
   end   
     
   def valid? 
-    
+    @status = "open"
   end   
   
   def execute_transaction
