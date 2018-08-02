@@ -16,7 +16,7 @@ class BankAccount
   
   def balance 
     @balance = 1000
-    @deposit << balance
+    @deposit << self
   end 
   
   def status 
