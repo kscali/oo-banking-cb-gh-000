@@ -10,7 +10,8 @@ class Transfer
   end   
     
   def valid? 
-    
+    @sender 
+    @receiver 
   end   
   
   def execute_transaction
