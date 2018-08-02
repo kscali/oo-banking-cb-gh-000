@@ -10,8 +10,8 @@ class Transfer
   end   
     
   def valid? 
-    @sender 
-    @receiver 
+    @sender.status = "open" 
+    @receiver.status = "open"
   end   
   
   def execute_transaction
