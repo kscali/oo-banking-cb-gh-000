@@ -2,17 +2,17 @@ class BankAccount
   attr_reader :name 
   attr_accessor :balance, :status
   
-  @@deposit=[]
+  @@account=[]
   
   def initialize(name)
     @name = name 
     @balance = balance
     @status = status 
-    @@deposit << balance
+    @@account << self
   end  
   
   def self.all 
-    @@deposit
+    @@account
   end   
   
   def balance 
@@ -24,7 +24,7 @@ class BankAccount
   end 
   
   def deposit(money)
-    @@deposit << money
+    @@account << money
   end   
 
 end
