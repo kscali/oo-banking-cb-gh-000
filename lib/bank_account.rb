@@ -8,7 +8,7 @@ class BankAccount
     @name = name 
     @balance = balance
     @status = status 
-    @@account << self
+    @@account << balance
   end  
   
   def self.all 
