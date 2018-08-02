@@ -8,6 +8,7 @@ class BankAccount
     @name = name 
     @balance = balance
     @status = status 
+    @@deposit << balance
   end  
   
   def self.all 
@@ -16,7 +17,6 @@ class BankAccount
   
   def balance 
     @balance = 1000
-    @deposit << self
   end 
   
   def status 
