@@ -16,7 +16,6 @@ class BankAccount
   
   def balance 
     @balance = 1000
-    @@account << self
   end 
   
   def status 
