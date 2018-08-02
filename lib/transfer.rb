@@ -10,7 +10,11 @@ class Transfer
   end   
     
   def valid? 
-    @status = "open"
+    if @status = "open"
+      true 
+    else 
+      false 
+    end   
   end   
   
   def execute_transaction
